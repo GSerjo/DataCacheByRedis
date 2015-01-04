@@ -16,6 +16,7 @@ namespace Client
                   .Select(x => (string)x)
                   .ToList()
                   .ForEach(Console.WriteLine);
+            Console.WriteLine("Total Items: {0}", values.Length);
         }
 
         private static RedisKey GetKey()
